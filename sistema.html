@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PetLog - Sistema de Gerenciamento</title>
+    <style>
+      /* Fonte padrão */
+      body {
+        font-family: "Arial", sans-serif;
+        background-color: #f7f3bc;
+      }
+
+      /* Navbar */
+      .navbar {
+        background-color: #eb780e;
+        padding: 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .navbar .logo h1 {
+        color: rgb(255, 255, 255);
+        font-size: 21px;
+      }
+
+      .navbar nav ul {
+        list-style-type: none;
+        display: flex;
+      }
+
+      .navbar nav ul li {
+        margin: 0 10px;
+      }
+
+      .navbar nav ul li a {
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        font-size: 16px;
+      }
+
+      .navbar nav ul li a:hover {
+        text-decoration: underline;
+      }
+
+      /* Seções principais */
+      .section {
+        padding: 40px 20px;
+        text-align: center;
+      }
+
+      .section-content {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      /* Cartões de serviços e produtos */
+      .card {
+        display: inline-block;
+        width: 30%;
+        padding: 20px;
+        margin: 10px;
+        background-color: #ffffff;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        border-radius: 8px;
+      }
+
+      .card img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+      }
+
+      .card h3 {
+        margin: 15px 0;
+        color: #333;
+      }
+
+      .card p {
+        color: #666;
+      }
+
+      .card .btn {
+        background-color: #ff5722;
+        color: rgb(255, 255, 255);
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        text-decoration: none;
+        font-size: 16px;
+      }
+
+      .card .btn:hover {
+        background-color: #e64a19;
+      }
+
+      /* Pedido */
+      .pedido {
+        margin: 15px 0;
+        padding: 50px;
+        background-color: #fff;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+      }
+
+      .pedido h3 {
+        color: #333;
+      }
+
+      .pedido p {
+        color: #666;
+      }
+
+      .pedido button {
+        background-color: #ff5722;
+        color: white;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      .pedido button:hover {
+        background-color: #e64a19;
+      }
+
+      /* agenda */
+      .agenda {
+        margin: 15px 0;
+        padding: 50px;
+        background-color: #fff;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+      }
+
+      .agenda h3 {
+        color: #333;
+      }
+
+      .agenda p {
+        color: #666;
+      }
+
+      .agenda button {
+        background-color: #ff5722;
+        color: white;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      .agenda button:hover {
+        background-color: #e64a19;
+      }
+
+      /* Ações */
+      .acoes-cards {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        flex-wrap: wrap;
+        margin-top: 30px;
+      }
+
+      .acao-card {
+        background-color: #fff;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.08);
+        border-radius: 8px;
+        padding: 30px 40px;
+        min-width: 220px;
+        text-align: center;
+      }
+
+      .acao-card h3 {
+        margin-bottom: 15px;
+        color: #333;
+      }
+
+      .acao-card .btn {
+        background-color: #ff5722;
+        color: white;
+        padding: 10px 22px;
+        border: none;
+        border-radius: 5px;
+        text-decoration: none;
+        font-size: 16px;
+        display: inline-block;
+        margin-top: 10px;
+      }
+
+      .acao-card .btn:hover {
+        background-color: #e64a19;
+      }
+
+      /* Rodapé */
+      footer {
+        text-align: center;
+        padding: 20px;
+        background-color: #eb780e;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="logo">
+          <h1>PetLog</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="sistema.html">Início</a></li>
+            <li><a href="agenda.html">Agenda</a></li>
+            <li><a href="cadastro.html">Cadastro de Clientes</a></li>
+            <li><a href="cadastro_pet.html">Cadastro de Pets</a></li>
+            <li><a href="listacad.html">Lista de Clientes</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="home" class="section">
+      <div class="section-content">
+        <h2>Bem-vindo ao Pet Shop 5 Estrelas!</h2>
+        <p>Gerencie seu petshop.</p>
+        <a href="agenda.html" class="btn">Ver Agenda</a>
+      </div>
+    </section>
+
+    <section id="acoes" class="section">
+      <div class="section-content">
+        <h2>Ações</h2>
+        <div class="acoes-cards">
+          <div class="acao-card">
+            <h3>Consultar Agenda</h3>
+            <a href="agenda.html" class="btn">Acessar Agenda</a>
+          </div>
+          <div class="acao-card">
+            <h3>Consultar Animais</h3>
+            <a href="animais.html" class="btn">Acessar Animais</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer id="contato">
+      <p>PetLog</p>
+    </footer>
+    <script></script>
+  </body>
+</html>
